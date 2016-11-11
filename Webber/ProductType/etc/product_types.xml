@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Catalog:etc/product_types.xsd">
+    <type name="menumap" label="Pub - Menumap" modelInstance="Webber\ProductType\Model\Product\Type\Menumap" indexPriority="100" sortOrder="10">
+        <customAttributes>
+            <attribute name="refundable" value="true"/>
+        </customAttributes>
+    </type>
+    <type name="binnenwerk" label="Pub - Binnenwerk" modelInstance="Webber\ProductType\Model\Product\Type\Binnenwerk" indexPriority="101" sortOrder="11">
+        <customAttributes>
+            <attribute name="refundable" value="true"/>
+        </customAttributes>
+    </type>
+    <type name="rekeningmap" label="Pub - Rekeningmap" modelInstance="Webber\ProductType\Model\Product\Type\Rekeningmap" indexPriority="102" sortOrder="12">
+        <customAttributes>
+            <attribute name="refundable" value="true"/>
+        </customAttributes>
+    </type>
+    <composableTypes>
+        <type name="binnenwerk" />
+        <type name="menumap" />
+        <type name="rekeningmap" />
+    </composableTypes>
+</config>
